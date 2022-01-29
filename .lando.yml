@@ -1,0 +1,12 @@
+name: php-parallel
+services:
+  php:
+    type: php:custom
+    via: cli
+    overrides:
+      build: ./php
+      image: php:8.0-zts
+tooling:
+  php:
+    service: php
+    cmd: php
